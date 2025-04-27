@@ -1,0 +1,41 @@
+.header {
+    padding: 12px 0;
+
+    &__navigation {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: space-around;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 45px;
+            border: 1px solid black;
+        }
+
+        &::before {
+            bottom: -10px;
+            left: 400px;
+        }
+        &::after {
+            right: 380px;
+            bottom: -10px;
+        }
+
+        a {
+            color: black;
+            font-weight: 700;
+        }
+    }
+}

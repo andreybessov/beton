@@ -1,0 +1,58 @@
+.sidebar {
+    background-color: black;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 20%;
+        padding: 15px 0;
+    }
+
+    &__list {
+        display: flex;
+        padding-left: 0;
+        width: 100%;
+        justify-content: space-between;
+        color: white;
+        position: relative;
+        margin: 0;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 45px;
+            border: 1px solid #FFFFFF;
+        }
+
+        &::before {
+            left: 250px;
+        }
+        &::after {
+            right: 220px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    &__button {
+        padding: 15px 54px;
+        white-space: nowrap;
+        border: none;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    &__item {
+        color: white;
+        font-size: 14px;
+    }
+
+}
