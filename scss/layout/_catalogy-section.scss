@@ -1,0 +1,48 @@
+.catalogy-section {
+
+    &__title {
+        margin: 120px 0 57px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    &__el1,
+    &__el2 {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    &__card {
+        box-shadow: 4px 4px 25.9px -8px #1887BFA8;
+        padding: 59px 30px 30px;
+        border-radius: 34px;
+        cursor: pointer;
+
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 101px 0;
+
+        a {
+            color: #fff;
+            padding: 20px 60px;
+            border: none;
+            background-color: #1887BF;
+            cursor: pointer;
+            align-items: center;
+        }
+    }
+
+
+
+}

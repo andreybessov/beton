@@ -1,0 +1,72 @@
+.product-section {
+  padding-bottom: 60px;
+    &__hero {
+      background: url('../../src/assets/hero-section-bg.png') no-repeat;
+       background-size: cover;
+      width: 100%;
+      margin-bottom: 104px;
+      padding: 64px 0 104px;
+    }
+
+    &__container {
+      display: flex;
+      color: #fff;
+      justify-content: space-between;
+
+      p {
+        max-width: 745px;
+        text-align: justify;
+      }
+    }
+
+
+    &__title {
+      text-align: center;
+      font-size: 128px;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  
+    &__table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+  
+      th, td {
+        padding: 16px;
+        border: 1px solid #151515;
+        font-size: 16px;
+      }
+  
+      th {
+        background-color: #ffe206f8;
+        font-weight: 600;
+        color: #fff;
+        border-top: none;
+
+        &:first-child {
+          border-left: none;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+  
+      tr:nth-child(even) {
+        background-color: rgb(29, 29, 161);
+        color: #fff;
+      }
+
+      tr:nth-child(odd) {
+        background-color: rgb(28, 28, 134);
+        color: #fff;
+      }
+  
+      tr:hover {
+        background-color: blue;
+      }
+    }
+  }
+  

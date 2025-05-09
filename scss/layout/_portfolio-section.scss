@@ -1,0 +1,27 @@
+.portfolio-section {
+    padding: 134px 0 434px;
+
+    &__title {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__gallery {
+        margin-top: 78px;
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        justify-content: space-around;
+        row-gap: 40px;
+    }
+}

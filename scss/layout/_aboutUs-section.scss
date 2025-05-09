@@ -1,0 +1,42 @@
+.aboutUs-section {
+    background-color: black;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        gap: 68px;
+        text-align: justify;
+
+        img {
+            max-width: 748px;
+            max-height: 748px;
+            border-radius: 0;
+        };
+    }
+
+    &__content {
+        padding-top: 101px;
+    }
+
+
+    &__title {
+        font-size: 35px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 80px;
+    }
+
+    &__span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 31px;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+}
