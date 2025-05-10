@@ -1,0 +1,55 @@
+.footer {
+    padding: 60px 0 34px;
+
+    &__container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        display: flex;
+        gap: 86px;
+    }
+
+    &__list {
+        color: #1887BF;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+
+        h3 {
+            margin: 0 0 20px;
+        }
+    }
+
+    &__link {
+        color: black;
+    }
+
+    &__info {
+        padding: 0;
+        h3 {
+            color: #1887BF;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    &__info-item {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 20px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &__p {
+        text-align: center;
+        margin: 40px 0 0;
+    }
+
+}
