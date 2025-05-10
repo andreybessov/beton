@@ -1,5 +1,9 @@
 .portfolio-section {
-    padding: 134px 0 434px;
+    padding: 96px 0 148px;
+
+    @media screen and (min-width:$bp-tablet) {
+        padding: 134px 0 434px;
+    }
 
     &__title {
         text-align: center;
@@ -8,7 +12,11 @@
     }
 
     &__text {
-        text-align: center;
+        text-align: justify;
+
+        @media screen and (min-width:$bp-tablet) {
+            text-align: center;
+        }
     }
 
     &__gallery {

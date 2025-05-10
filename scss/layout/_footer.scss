@@ -2,14 +2,23 @@
     padding: 60px 0 34px;
 
     &__container {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
+        display: block;
+
+        @media screen and (min-width:$bp-tablet) {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
     }
 
     &__navigation {
-        display: flex;
-        gap: 86px;
+        display: block;
+        
+
+        @media screen and (min-width:$bp-tablet) {
+            display: flex;
+            gap: 86px;
+        }
     }
 
     &__list {

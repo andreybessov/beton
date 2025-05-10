@@ -1,17 +1,29 @@
 .catalogy-section {
 
     &__title {
-        margin: 120px 0 57px;
+        margin: 72px 0 48px;
         text-align: center;
-        font-size: 35px;
+        font-size: 28px;
         font-weight: 700;
+
+        @media screen and (min-width:$bp-tablet) {
+            margin: 120px 0 57px;
+            font-size: 35px;
+        }
     }
 
     &__el1,
     &__el2 {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
         padding-left: 0;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            justify-content: space-between;
+        }
     }
 
     &__card {

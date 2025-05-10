@@ -1,5 +1,10 @@
 .header {
     padding: 12px 0;
+    background-color: black;
+
+    @media screen and (min-width:$bp-desktop) {
+        background-color: transparent;
+    }
 
     &__navigation {
         display: flex;
@@ -17,25 +22,39 @@
 
         &::before,
         &::after {
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 45px;
-            border: 1px solid black;
+            display: none;
+
+            @media screen and (min-width:$bp-tablet) {
+                display: block;
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 45px;
+                border: 1px solid #fff;
+            }
+
+            @media screen and (min-width:$bp-desktop) {
+                border: 1px solid black;
+            }
         }
 
         &::before {
             bottom: -10px;
             left: 400px;
         }
+
         &::after {
             right: 380px;
             bottom: -10px;
         }
 
         a {
-            color: black;
+            color: #fff;
             font-weight: 700;
+
+            @media screen and (min-width:$bp-desktop) {
+                color: black;
+            }
         }
     }
 }

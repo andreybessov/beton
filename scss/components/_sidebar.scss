@@ -1,5 +1,10 @@
 .sidebar {
-    background-color: black;
+    display: none;
+
+    @media screen and (min-width:$bp-desktop) {
+        display: block;
+        background-color: black;
+    }
 
     &__container {
         display: flex;
@@ -19,11 +24,16 @@
 
         &::before,
         &::after {
-            content: '';
-            position: absolute;
-            width: 1px;
-            height: 45px;
-            border: 1px solid #FFFFFF;
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                display: block;
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 45px;
+                border: 1px solid #FFFFFF;
+            }
         }
 
         &::before {
@@ -48,6 +58,10 @@
         color: black;
         font-size: 16px;
         cursor: pointer;
+
+        @media screen and (min-width:$bp-desktop) {
+            
+        }
     }
 
     &__item {
