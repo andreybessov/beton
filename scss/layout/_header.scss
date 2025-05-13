@@ -14,11 +14,15 @@
     }
 
     &__menu {
-        display: flex;
+        display: none;
+
+        @media screen and (min-width:$bp-tablet) {
+            display: flex;
         padding: 0;
         width: 100%;
         justify-content: space-around;
         position: relative;
+        }
 
         &::before,
         &::after {
@@ -55,6 +59,17 @@
             @media screen and (min-width:$bp-desktop) {
                 color: black;
             }
+        }
+    }
+    &__burger-button {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    
+        @media screen and (min-width: $bp-tablet) {                
+        display: none;
         }
     }
 }

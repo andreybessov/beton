@@ -13,6 +13,7 @@
 
     &__navigation {
         display: block;
+        text-align: center;
         
 
         @media screen and (min-width:$bp-tablet) {
@@ -28,9 +29,23 @@
         gap: 15px;
         padding: 0;
         margin: 0;
+        align-items: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            align-items: start;
+        }
+
+        li {
+         display: flex;
+         justify-content: start;
+        }
 
         h3 {
-            margin: 0 0 20px;
+            margin: 16px 0 20px;
+
+            @media screen and (min-width:$bp-tablet){
+                margin: 0 0 20px;
+            }
         }
     }
 
@@ -40,6 +55,12 @@
 
     &__info {
         padding: 0;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media screen and (min-width:$bp-tablet) {
+            margin: 0;
+        }
         h3 {
             color: #1887BF;
             font-size: 20px;
@@ -50,10 +71,16 @@
     &__info-item {
         display: flex;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 8px;
         gap: 20px;
         font-size: 14px;
         font-weight: 400;
+        justify-content: center;
+
+        @media screen and (min-width:$bp-tablet) {
+            margin-top: 20px;
+            justify-content: start;
+        }
     }
 
     &__p {
