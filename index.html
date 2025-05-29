@@ -1,268 +1,486 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="src/css/main.min.css">
-    <!-- <base href="/beton/"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Продаємо товарний бетон, залізобетонні вироби та тротуарну плитку в Києві. Доставка та якісні матеріали від ПСГ 'Ковальська'.">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="src/css/main.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <base href="/beton/" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Продаємо товарний бетон, залізобетонні вироби та тротуарну плитку в Києві. Доставка та якісні матеріали від ПСГ 'Ковальська'."
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <aside class="sidebar">
-        <div class="container">
-            <div class="sidebar__container">
-        <ul class="sidebar__list">
+      <div class="container">
+        <div class="sidebar__container">
+          <ul class="sidebar__list">
             <li>
-                <img src="src/assets/location-icon.png" alt="location-icon">
-                <a
+              <img
+                src="src/assets/location-icon.png"
+                alt="location-icon"
+              />
+              <a
                 class="sidebar__item"
                 href="https://maps.app.goo.gl/wUu3d5ntQ6RuDyZm7"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Україна, м. Київ,<br/>
+                >Україна, м. Київ,<br />
                 вул. Тараса Шевченка 5</a
-              ></li>
-            <li><img src="src/assets/time-icon.png" alt="time">Режим роботи:<br/>з 8:00 до 20:00</li>
-            <li><img src="src/assets/phone-icon.png" alt="phoneIcon">+38 (066) 666 66 66<br/>
-                +38 (066) 666 66 66</li>
-        </ul>
-        <a href="tel:+380666666666" class="sidebar__button">Зателефонувати</a>
+              >
+            </li>
+            <li>
+              <img
+                src="src/assets/time-icon.png"
+                alt="time"
+              />Режим роботи:<br />з 8:00 до 20:00
+            </li>
+            <li>
+              <img
+                src="src/assets/phone-icon.png"
+                alt="phoneIcon"
+              />+38 (066) 666 66 66<br />
+              +38 (066) 666 66 66
+            </li>
+          </ul>
+          <a
+            href="tel:+380666666666"
+            class="sidebar__button"
+            >Зателефонувати</a
+          >
         </div>
-        </div>
+      </div>
     </aside>
     <header class="header">
-        <div class="container">
-            <nav class="header__navigation">
-                <!-- <a href="index.html">
+      <div class="container">
+        <nav class="header__navigation">
+          <!-- <a href="index.html">
                     <img src="src/assets/logo.svg" alt="Логотип Beauty Zone" />
                   </a> -->
-                 <ul class="header__menu">
-                    <li><a href="#aboutUs">Про компанію</a></li>
-                    <li><a href="product.html#priceTable">Ціни</a></li>
-                    <li><a href="#">Контакти</a></li>
-                 </ul>
-                 <button class="header__burger-button menu-btn-open" type="button">
-                    <img src="src/assets/burger-icon.png" alt="burger-icon">
-                 </button>
-                 <div class="mobile-menu">
-                    <div class="container">
-                        <button
-                        class="mobile-menu__btn-close menu-btn-close"
-                        type="button"
-                            ></button>
-                            <ul class="mobile-menu__list">
-                                <li><a class="mobile-link" href="#aboutUs">Про компанію</a></li>
-                                <li><a class="mobile-link" href="product.html#priceTable">Ціни</a></li>
-                                <li><a class="mobile-link" href="#">Контакти</a></li>
-                             </ul>
-                    </div>
-                 </div>
-            </nav>
-        </div>
+          <ul class="header__menu">
+            <li><a href="#aboutUs">Про компанію</a></li>
+            <li><a href="product.html#priceTable">Ціни</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+          <button
+            class="header__burger-button menu-btn-open"
+            type="button"
+          >
+            <img
+              src="src/assets/burger-icon.png"
+              alt="burger-icon"
+            />
+          </button>
+          <div class="mobile-menu">
+            <div class="container">
+              <button
+                class="mobile-menu__btn-close menu-btn-close"
+                type="button"
+              ></button>
+              <ul class="mobile-menu__list">
+                <li>
+                  <a
+                    class="mobile-link"
+                    href="#aboutUs"
+                    >Про компанію</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-link"
+                    href="product.html#priceTable"
+                    >Ціни</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mobile-link"
+                    href="#"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-     <main>
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <div class="hero-section__container">
-                <h1 class="hero-section__title">Товарний бетон, ЗБВ та будматеріали у Києві</h1>
-                <p class="hero-section__text">Ми продаємо та доставляємо бетонні суміші від ПСГ “Ковальська”, залізобетонні конструкції (сходові марші, фундаментні блоки, залізобетонні кільця, бордюри), тротуарну плитку (ПСГ “Ковальська” торгова марка “Авеню”) та інші будівельні матеріали.</p>
-                <a href="#catalogy" class="hero-section__button">Каталог</a>
-            </div>
-            </div>
-        </section>
-        <section id="catalogy" class="catalogy-section">
-            <div class="container">
-                <h2 class="catalogy-section__title">Каталог продукції</h2>
-                <div class="catalogy-section__container">
-                <ul class="catalogy-section__el1">
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка
-                            </h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка
-                            </h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка
-                            </h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка
-                            </h3>
-                        </article>
-                    </li>
-                </ul>
-                <ul class="catalogy-section__el2">
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка</h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка</h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка</h3>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="catalogy-section__card">
-                            <img src="src/assets/item-icon.png" alt="beton">
-                            <h3>Прессованная плитка</h3>
-                        </article>
-                    </li>
-                </ul>
-                <div class="catalogy-section__button">
-                <a href="product.html" id="catalogLink" data-link="true">Більше продукції</a>
-            </div>
-            </div>
+    <main>
+      <section
+        id="hero"
+        class="hero-section"
+      >
+        <div class="container">
+          <div class="hero-section__container">
+            <h1 class="hero-section__title">
+              Товарний бетон, ЗБВ та будматеріали у Києві
+            </h1>
+            <p class="hero-section__text">
+              Ми продаємо та доставляємо бетонні суміші від ПСГ
+              “Ковальська”, залізобетонні конструкції (сходові марші,
+              фундаментні блоки, залізобетонні кільця, бордюри), тротуарну
+              плитку (ПСГ “Ковальська” торгова марка “Авеню”) та інші будівельні
+              матеріали.
+            </p>
+            <a
+              href="#catalogy"
+              class="hero-section__button"
+              >Каталог</a
+            >
+          </div>
         </div>
-        </section>
-        <section id="aboutUs" class="aboutUs-section">
-            <div class="container">
-                <div class="aboutUs-section__container">
-                    <img src="src/assets/about-us.png" alt="work Time">
-                    <div class="aboutUs-section__content">
-                        <h2 class="aboutUs-section__title">Про нас</h2>
-                        <span class="aboutUs-section__span">«Мастер Строй» - надежная и недорогая тротуарная плитка в Волоколамском районе</span>
-                        <p class="aboutUs-section__text">Наша компания готова помочь вам и с первым и со вторым аспектом данной задачи. 
-                            В нашем каталоге вы сможете подобрать желаемый вариант материала и сразу заказать профессиональную укладку на вашем участке. 
-                            Вниманию покупателей всегда доступна качественная и прочная тротуарная плитка от производителя по оптимальной стоимости.
-                            Если вам нужна надежная тротуарная плитка, купить  в Волоколамском районе такой материал можно у нас, цена продукции из каталога вас приятно удивит и не ударит по бюджету. 
-                            Оформить заказ можно прямо на сайте. Если в процессе выбора вам понадобится консультация специалиста, вы всегда можете заказать обратный звонок, используя специальную функцию на сайте, 
-                            либо самостоятельно позвонить менеджеру по указанным телефонам.                          
-                            Теперь если вам нужна тротуарная плитка, вы знаете где ее можно приобрести. «Мастер Строй» - компания-производитель, которая гарантирует достойный уровень качества по приятной цене. 
-                            <br/>ООО "Масте"</p>
-                            <div class="aboutUs-section__button">
-                            <a href="#" class="hero-section__button">Купити</a>
-                        </div>
-                    </div>
-                </div>
+      </section>
+      <section
+        id="catalogy"
+        class="catalogy-section"
+      >
+        <div class="container">
+          <h2 class="catalogy-section__title">Каталог продукції</h2>
+          <div class="catalogy-section__container">
+            <ul class="catalogy-section__list">
+              <li>
+                <article class="catalogy-section__card">
+                  <img
+                    src="src/assets/product-item1.png"
+                    alt="beton"
+                  />
+                  <h3>Сходові системи</h3>
+                </article>
+              </li>
+              <li>
+                <article class="catalogy-section__card">
+                  <img
+                    src="src/assets/product-item2.png"
+                    alt="beton"
+                  />
+                  <h3>Прессованная плитка</h3>
+                </article>
+              </li>
+              <li>
+                <article class="catalogy-section__card">
+                  <img
+                    src="src/assets/product-item3.png"
+                    alt="beton"
+                  />
+                  <h3>Прессованная плитка</h3>
+                </article>
+              </li>
+            </ul>
+            <div class="catalogy-section__button">
+              <a
+                href="product.html"
+                id="catalogLink"
+                data-link="true"
+                >Більше продукції</a
+              >
             </div>
-        </section>
-        <section class="portfolio-section">
-            <div class="container">
-                <h2 class="portfolio-section__title">Наші роботи</h2>
-                <p class="portfolio-section__text">Отделка участка, сада, входной группы или любой другой частной территории требует большого внимания со стороны владельца, поскольку именно эти зоны являются «лицом», а значит и престижем вашего дома или коммерческого объекта. Подбор прочного и эстетически презентабельного материала для оформления входа, дорожек, пешеходных зон – это уже половина успеха отделки. 
-                    Вторая половина – это, безусловно, грамотная укладка, обеспечивающая долговечность покрытия.</p>
-                <div class="portfolio-section__gallery">
-                    <ul class="portfolio-section__list">
-                        <li>
-                            <img src="src/assets/portfolio.png" alt="our work">
-                        </li>
-                        <li>
-                            <img src="src/assets/portfolio.png" alt="our work">
-                        </li>
-                        <li>
-                            <img src="src/assets/portfolio.png" alt="our work">
-                        </li>
-                        <li>
-                            <img src="src/assets/portfolio.png" alt="our work">
-                        </li>
-                        <li>
-                            <img src="src/assets/portfolio.png" alt="our work">
-                        </li>
-                        <li>
-                            <img src="src/assets/portfolio.png" alt="our work">
-                        </li>
-                    </ul>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="aboutUs"
+        class="aboutUs-section"
+      >
+        <div class="container">
+          <div class="aboutUs-section__container">
+            <img
+              src="src/assets/about-us.png"
+              alt="work Time"
+            />
+            <div class="aboutUs-section__content">
+              <h2 class="aboutUs-section__title">Про нас</h2>
+              <span class="aboutUs-section__span"
+                >«Мастер Строй» - надежная и недорогая тротуарная плитка в
+                Волоколамском районе</span
+              >
+              <p class="aboutUs-section__text">
+                Наша компания готова помочь вам и с первым и со вторым аспектом
+                данной задачи. В нашем каталоге вы сможете подобрать желаемый
+                вариант материала и сразу заказать профессиональную укладку на
+                вашем участке. Вниманию покупателей всегда доступна качественная
+                и прочная тротуарная плитка от производителя по оптимальной
+                стоимости. Если вам нужна надежная тротуарная плитка, купить в
+                Волоколамском районе такой материал можно у нас, цена продукции
+                из каталога вас приятно удивит и не ударит по бюджету. Оформить
+                заказ можно прямо на сайте. Если в процессе выбора вам
+                понадобится консультация специалиста, вы всегда можете заказать
+                обратный звонок, используя специальную функцию на сайте, либо
+                самостоятельно позвонить менеджеру по указанным телефонам.
+                Теперь если вам нужна тротуарная плитка, вы знаете где ее можно
+                приобрести. «Мастер Строй» - компания-производитель, которая
+                гарантирует достойный уровень качества по приятной цене.
+                <br />ООО "Масте"
+              </p>
+              <div class="aboutUs-section__button">
+                <a
+                  href="#"
+                  class="hero-section__button"
+                  >Купити</a
+                >
+              </div>
             </div>
-        </section>
-        <section class="advantages-section">
-            <div class="container">
-                <h2 class="advantages-section__title">Наші переваги</h2>
-                <div>
-                <ul class="advantages-section__list">
-                    <li class="advantages-section__card">
-                        <img src="src/assets/advantages-card.png" alt="advantages Icon">
-                        <h3>Тротуарная плитка от производителя в широком ассортименте</h3>
-                        <p>На сайте вы сможете подобрать прессованную, вибролитую или фасадную плитку, блоки и бордюры, водостоки, крышки на столбы и многое другое.</p>
-                    </li>
-                    <li class="advantages-section-section__card">
-                        <img src="src/assets/advantages-card.png" alt="advantages Icon">
-                        <h3>Тротуарная плитка от производителя в широком ассортименте</h3>
-                        <p>На сайте вы сможете подобрать прессованную, вибролитую или фасадную плитку, блоки и бордюры, водостоки, крышки на столбы и многое другое.</p>
-                    </li>
-                    <li class="advantages-section__card">
-                        <img src="src/assets/advantages-card.png" alt="advantages Icon">
-                        <h3>Тротуарная плитка от производителя в широком ассортименте</h3>
-                        <p>На сайте вы сможете подобрать прессованную, вибролитую или фасадную плитку, блоки и бордюры, водостоки, крышки на столбы и многое другое.</p>
-                    </li>
-                    </ul>
-                    <ul class="advantages-section__list">
-                    <li class="advantages-section__card">
-                        <img src="src/assets/advantages-card.png" alt="advantages Icon">
-                        <h3>Тротуарная плитка от производителя в широком ассортименте</h3>
-                        <p>На сайте вы сможете подобрать прессованную, вибролитую или фасадную плитку, блоки и бордюры, водостоки, крышки на столбы и многое другое.</p>
-                    </li>
-                    <li class="advantages-section__card">
-                        <img src="src/assets/advantages-card.png" alt="advantages Icon">
-                        <h3>Тротуарная плитка от производителя в широком ассортименте</h3>
-                        <p>На сайте вы сможете подобрать прессованную, вибролитую или фасадную плитку, блоки и бордюры, водостоки, крышки на столбы и многое другое.</p>
-                    </li>
-                    <li class="advantages-section__card">
-                        <img src="src/assets/advantages-card.png" alt="advantages Icon">
-                        <h3>Тротуарная плитка от производителя в широком ассортименте</h3>
-                        <p>На сайте вы сможете подобрать прессованную, вибролитую или фасадную плитку, блоки и бордюры, водостоки, крышки на столбы и многое другое.</p>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-section">
+        <div class="container">
+          <h2 class="portfolio-section__title">Наші роботи</h2>
+          <p class="portfolio-section__text">
+            Отделка участка, сада, входной группы или любой другой частной
+            территории требует большого внимания со стороны владельца, поскольку
+            именно эти зоны являются «лицом», а значит и престижем вашего дома
+            или коммерческого объекта. Подбор прочного и эстетически
+            презентабельного материала для оформления входа, дорожек, пешеходных
+            зон – это уже половина успеха отделки. Вторая половина – это,
+            безусловно, грамотная укладка, обеспечивающая долговечность
+            покрытия.
+          </p>
+          <div class="portfolio-section__gallery">
+            <ul class="portfolio-section__list">
+              <li>
+                <img
+                  src="src/assets/portfolio.png"
+                  alt="our work"
+                />
+              </li>
+              <li>
+                <img
+                  src="src/assets/portfolio.png"
+                  alt="our work"
+                />
+              </li>
+              <li>
+                <img
+                  src="src/assets/portfolio.png"
+                  alt="our work"
+                />
+              </li>
+              <li>
+                <img
+                  src="src/assets/portfolio.png"
+                  alt="our work"
+                />
+              </li>
+              <li>
+                <img
+                  src="src/assets/portfolio.png"
+                  alt="our work"
+                />
+              </li>
+              <li>
+                <img
+                  src="src/assets/portfolio.png"
+                  alt="our work"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="advantages-section__title">Наші переваги</h2>
+          <div>
+            <ul class="advantages-section__list">
+              <li class="advantages-section__card">
+                <img
+                  src="src/assets/advantages-card.png"
+                  alt="advantages Icon"
+                />
+                <h3>
+                  Тротуарная плитка от производителя в широком ассортименте
+                </h3>
+                <p>
+                  На сайте вы сможете подобрать прессованную, вибролитую или
+                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
+                  и многое другое.
+                </p>
+              </li>
+              <li class="advantages-section-section__card">
+                <img
+                  src="src/assets/advantages-card.png"
+                  alt="advantages Icon"
+                />
+                <h3>
+                  Тротуарная плитка от производителя в широком ассортименте
+                </h3>
+                <p>
+                  На сайте вы сможете подобрать прессованную, вибролитую или
+                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
+                  и многое другое.
+                </p>
+              </li>
+              <li class="advantages-section__card">
+                <img
+                  src="src/assets/advantages-card.png"
+                  alt="advantages Icon"
+                />
+                <h3>
+                  Тротуарная плитка от производителя в широком ассортименте
+                </h3>
+                <p>
+                  На сайте вы сможете подобрать прессованную, вибролитую или
+                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
+                  и многое другое.
+                </p>
+              </li>
+            </ul>
+            <ul class="advantages-section__list">
+              <li class="advantages-section__card">
+                <img
+                  src="src/assets/advantages-card.png"
+                  alt="advantages Icon"
+                />
+                <h3>
+                  Тротуарная плитка от производителя в широком ассортименте
+                </h3>
+                <p>
+                  На сайте вы сможете подобрать прессованную, вибролитую или
+                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
+                  и многое другое.
+                </p>
+              </li>
+              <li class="advantages-section__card">
+                <img
+                  src="src/assets/advantages-card.png"
+                  alt="advantages Icon"
+                />
+                <h3>
+                  Тротуарная плитка от производителя в широком ассортименте
+                </h3>
+                <p>
+                  На сайте вы сможете подобрать прессованную, вибролитую или
+                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
+                  и многое другое.
+                </p>
+              </li>
+              <li class="advantages-section__card">
+                <img
+                  src="src/assets/advantages-card.png"
+                  alt="advantages Icon"
+                />
+                <h3>
+                  Тротуарная плитка от производителя в широком ассортименте
+                </h3>
+                <p>
+                  На сайте вы сможете подобрать прессованную, вибролитую или
+                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
+                  и многое другое.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer__container">
-                <ul class="footer__info">
-                    <li><h3>Магазин</h3></li>
-                    <li class="footer__info-item"><img src="src/assets/time-icon-footer.png" alt="time"><span>Режим роботи з 8:00 до 20:00</span></li>
-                    <li class="footer__info-item"><img src="src/assets/phone-icon-footer.png" alt="phone icon"><span>+380666666666</span></li>
-                </ul>
-                <nav class="footer__navigation">
-                <ul class='footer__list'>
-                    <li><h3>Каталог</h3></li>
-                    <li><a class="footer__link" href="#">Акції</a></li>
-                    <li><a class="footer__link" href="#">Тротуарна плитка</a></li>
-                    <li><a class="footer__link" href="#">Бордюри</a></li>
-                </ul>
-                <ul class='footer__list'>
-                    <li><h3>Сервіси</h3></li>
-                    <li><a class="footer__link" href="#">Дизайн-проекти</a></li>
-                    <li><a class="footer__link" href="#">Укладка бруківки</a></li>
-                    <li><a class="footer__link" href="#">Доставка</a></li>
-                </ul>
-                <ul class='footer__list'>
-                    <li><h3>Про компанію</h3></li>
-                    <li><a class="footer__link" href="#">Контакти</a></li>
-                    <li><a class="footer__link" href="#">Завод BRAER</a></li>
-                    <li><a class="footer__link" href="#">Портфоліо</a></li>
-                </ul>
-            </nav>
-            </div>
-            <p class="footer__p">&copy;Права захищені</p>
+      <div class="container">
+        <div class="footer__container">
+          <ul class="footer__info">
+            <li><h3>Магазин</h3></li>
+            <li class="footer__info-item">
+              <img
+                src="src/assets/time-icon-footer.png"
+                alt="time"
+              /><span>Режим роботи з 8:00 до 20:00</span>
+            </li>
+            <li class="footer__info-item">
+              <img
+                src="src/assets/phone-icon-footer.png"
+                alt="phone icon"
+              /><span>+380666666666</span>
+            </li>
+          </ul>
+          <nav class="footer__navigation">
+            <ul class="footer__list">
+              <li><h3>Каталог</h3></li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Акції</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Тротуарна плитка</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Бордюри</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li><h3>Сервіси</h3></li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Дизайн-проекти</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Укладка бруківки</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Доставка</a
+                >
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li><h3>Про компанію</h3></li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Контакти</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Завод BRAER</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__link"
+                  href="#"
+                  >Портфоліо</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
+        <p class="footer__p">&copy;Права захищені</p>
+      </div>
     </footer>
 
     <script src="js/mobile-menu.js"></script>
-</body>
+  </body>
 </html>

@@ -12,10 +12,8 @@
         }
     }
 
-    &__el1,
-    &__el2 {
+    &__list {
         display: flex;
-        flex-wrap: wrap;
         padding-left: 0;
         flex-wrap: wrap;
         gap: 30px;
@@ -23,13 +21,22 @@
 
         @media screen and (min-width:$bp-tablet) {
             justify-content: space-between;
+
+            img {
+                max-height: 200px;
+            }
         }
     }
 
     &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         box-shadow: 4px 4px 25.9px -8px #1887BFA8;
         padding: 59px 30px 30px;
         border-radius: 34px;
+        width: 350px;
+        height: 388px;
         cursor: pointer;
 
         h3 {
