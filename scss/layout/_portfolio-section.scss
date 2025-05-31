@@ -1,8 +1,8 @@
 .portfolio-section {
-    padding: 96px 0 148px;
+    padding: 64px 0 86px;
 
     @media screen and (min-width:$bp-tablet) {
-        padding: 134px 0 434px;
+        padding: 134px;
     }
 
     &__title {
@@ -29,7 +29,13 @@
         flex-wrap: wrap;
         width: 100%;
         padding: 0;
-        justify-content: space-around;
-        row-gap: 40px;
+        justify-content: center;
+        gap: 30px;
+        
+
+        img {
+            max-width: 350px;
+            max-height: 381px;
+        }
     }
 }

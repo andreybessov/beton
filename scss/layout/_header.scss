@@ -1,9 +1,15 @@
 .header {
     padding: 12px 0;
     background-color: black;
+    opacity: 1;
+    pointer-events: all;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     @media screen and (min-width:$bp-desktop) {
         background-color: transparent;
+        position: static;
     }
 
     &__navigation {
@@ -11,6 +17,7 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
+        transition: opacity 0.3s ease;
     }
 
     &__menu {
@@ -58,6 +65,11 @@
 
             @media screen and (min-width:$bp-desktop) {
                 color: black;
+                transition: color 0.3s linear;
+
+                &:hover {
+                    color: #1887bf;
+                }
             }
         }
     }
@@ -72,4 +84,11 @@
         display: none;
         }
     }
+}
+
+@media screen and (max-width: $bp-tablet) {
+  .header--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }

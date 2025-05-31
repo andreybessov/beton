@@ -21,6 +21,7 @@
         color: white;
         position: relative;
         margin: 0;
+        font-size: 15px;
 
         &::before,
         &::after {
@@ -51,16 +52,23 @@
     }
 
     &__button {
-        padding: 15px 54px;
-        white-space: nowrap;
-        border: none;
-        background-color: white;
-        color: black;
-        font-size: 16px;
-        cursor: pointer;
+        display: none;
 
         @media screen and (min-width:$bp-desktop) {
-            
+            display: block;
+            padding: 15px 54px;
+            white-space: nowrap;
+             border: none;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color, color,  0.3s ease;
+
+            &:hover {
+                color: #FFFFFF;
+                background-color: #1887bf;
+            }
         }
     }
 

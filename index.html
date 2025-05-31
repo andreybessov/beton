@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <base href="/beton/" />
+    <!-- <base href="/beton/" /> -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -19,7 +19,7 @@
       name="description"
       content="Продаємо товарний бетон, залізобетонні вироби та тротуарну плитку в Києві. Доставка та якісні матеріали від ПСГ 'Ковальська'."
     />
-    <title>Document</title>
+    <title>Beton</title>
   </head>
   <body>
     <aside class="sidebar">
@@ -70,7 +70,7 @@
                   </a> -->
           <ul class="header__menu">
             <li><a href="#aboutUs">Про компанію</a></li>
-            <li><a href="product.html#priceTable">Ціни</a></li>
+            <li><a href="#catalogy">Ціни</a></li>
             <li><a href="#">Контакти</a></li>
           </ul>
           <button
@@ -91,22 +91,22 @@
               <ul class="mobile-menu__list">
                 <li>
                   <a
-                    class="mobile-link"
+                    class="mobile-link1"
                     href="#aboutUs"
                     >Про компанію</a
                   >
                 </li>
                 <li>
                   <a
-                    class="mobile-link"
-                    href="product.html#priceTable"
+                    class="mobile-link2"
+                    href="#catalogy"
                     >Ціни</a
                   >
                 </li>
                 <li>
                   <a
-                    class="mobile-link"
-                    href="#"
+                    class="mobile-link3"
+                    href="#contact"
                     >Контакти</a
                   >
                 </li>
@@ -150,36 +150,51 @@
           <div class="catalogy-section__container">
             <ul class="catalogy-section__list">
               <li>
-                <article class="catalogy-section__card">
-                  <img
-                    src="src/assets/product-item1.png"
-                    alt="beton"
-                  />
-                  <h3>Сходові системи</h3>
-                </article>
+                <a href="stairs.html">
+                  <article
+                    id="catalogyCard1"
+                    class="catalogy-section__card"
+                  >
+                    <img
+                      src="src/assets/product-item1.png"
+                      alt="beton"
+                    />
+                    <h3>СХОДОВІ СИСТЕМИ</h3>
+                  </article>
+                </a>
               </li>
               <li>
-                <article class="catalogy-section__card">
-                  <img
-                    src="src/assets/product-item2.png"
-                    alt="beton"
-                  />
-                  <h3>Прессованная плитка</h3>
-                </article>
+                <a href="rings.html">
+                  <article
+                    id="catalogyCard2"
+                    class="catalogy-section__card"
+                  >
+                    <img
+                      src="src/assets/product-item2.png"
+                      alt="beton"
+                    />
+                    <h3>КІЛЬЦЯ ТА КРИШКИ</h3>
+                  </article>
+                </a>
               </li>
               <li>
-                <article class="catalogy-section__card">
-                  <img
-                    src="src/assets/product-item3.png"
-                    alt="beton"
-                  />
-                  <h3>Прессованная плитка</h3>
-                </article>
+                <a href="membranes.html">
+                  <article
+                    id="catalogyCard3"
+                    class="catalogy-section__card"
+                  >
+                    <img
+                      src="src/assets/product-item3.png"
+                      alt="beton"
+                    />
+                    <h3>ПЕРЕТИНКИ</h3>
+                  </article>
+                </a>
               </li>
             </ul>
             <div class="catalogy-section__button">
               <a
-                href="product.html"
+                href="stairs.html"
                 id="catalogLink"
                 data-link="true"
                 >Більше продукції</a
@@ -233,7 +248,10 @@
           </div>
         </div>
       </section>
-      <section class="portfolio-section">
+      <section
+        class="portfolio-section"
+        id="portfolio"
+      >
         <div class="container">
           <h2 class="portfolio-section__title">Наші роботи</h2>
           <p class="portfolio-section__text">
@@ -256,31 +274,13 @@
               </li>
               <li>
                 <img
-                  src="src/assets/portfolio.png"
+                  src="src/assets/portfolio2.png"
                   alt="our work"
                 />
               </li>
               <li>
                 <img
-                  src="src/assets/portfolio.png"
-                  alt="our work"
-                />
-              </li>
-              <li>
-                <img
-                  src="src/assets/portfolio.png"
-                  alt="our work"
-                />
-              </li>
-              <li>
-                <img
-                  src="src/assets/portfolio.png"
-                  alt="our work"
-                />
-              </li>
-              <li>
-                <img
-                  src="src/assets/portfolio.png"
+                  src="src/assets/portfolio3.png"
                   alt="our work"
                 />
               </li>
@@ -288,7 +288,10 @@
           </div>
         </div>
       </section>
-      <section class="advantages-section">
+      <section
+        class="advantages-section"
+        id="advantages"
+      >
         <div class="container">
           <h2 class="advantages-section__title">Наші переваги</h2>
           <div>
@@ -309,74 +312,25 @@
               </li>
               <li class="advantages-section-section__card">
                 <img
-                  src="src/assets/advantages-card.png"
+                  src="src/assets/advantages-card2.png"
                   alt="advantages Icon"
                 />
-                <h3>
-                  Тротуарная плитка от производителя в широком ассортименте
-                </h3>
+                <h3>Высокий уровень сервиса обслуживания</h3>
                 <p>
-                  На сайте вы сможете подобрать прессованную, вибролитую или
-                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
-                  и многое другое.
+                  Наши менеджеры всегда вежливые и профессиональные в работе с
+                  клиентами, они готовы помочь с выбором нужной модели и
+                  ответить на все вопросы клиента.
                 </p>
               </li>
               <li class="advantages-section__card">
                 <img
-                  src="src/assets/advantages-card.png"
+                  src="src/assets/advantages-card3.png"
                   alt="advantages Icon"
                 />
-                <h3>
-                  Тротуарная плитка от производителя в широком ассортименте
-                </h3>
+                <h3>Услуги команды опытных специалистов по монтажу</h3>
                 <p>
-                  На сайте вы сможете подобрать прессованную, вибролитую или
-                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
-                  и многое другое.
-                </p>
-              </li>
-            </ul>
-            <ul class="advantages-section__list">
-              <li class="advantages-section__card">
-                <img
-                  src="src/assets/advantages-card.png"
-                  alt="advantages Icon"
-                />
-                <h3>
-                  Тротуарная плитка от производителя в широком ассортименте
-                </h3>
-                <p>
-                  На сайте вы сможете подобрать прессованную, вибролитую или
-                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
-                  и многое другое.
-                </p>
-              </li>
-              <li class="advantages-section__card">
-                <img
-                  src="src/assets/advantages-card.png"
-                  alt="advantages Icon"
-                />
-                <h3>
-                  Тротуарная плитка от производителя в широком ассортименте
-                </h3>
-                <p>
-                  На сайте вы сможете подобрать прессованную, вибролитую или
-                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
-                  и многое другое.
-                </p>
-              </li>
-              <li class="advantages-section__card">
-                <img
-                  src="src/assets/advantages-card.png"
-                  alt="advantages Icon"
-                />
-                <h3>
-                  Тротуарная плитка от производителя в широком ассортименте
-                </h3>
-                <p>
-                  На сайте вы сможете подобрать прессованную, вибролитую или
-                  фасадную плитку, блоки и бордюры, водостоки, крышки на столбы
-                  и многое другое.
+                  Наша компания предлагает услуги профессиональной укладки и
+                  другие работы по благоустройству частных территорий.
                 </p>
               </li>
             </ul>
@@ -384,7 +338,10 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer
+      class="footer"
+      id="contact"
+    >
       <div class="container">
         <div class="footer__container">
           <ul class="footer__info">
@@ -395,92 +352,57 @@
                 alt="time"
               /><span>Режим роботи з 8:00 до 20:00</span>
             </li>
-            <li class="footer__info-item">
-              <img
-                src="src/assets/phone-icon-footer.png"
-                alt="phone icon"
-              /><span>+380666666666</span>
+            <li>
+              <a
+                class="footer__info-item footer__link"
+                href="tel:+38066666666"
+              >
+                <img
+                  src="src/assets/phone-icon-footer.png"
+                  alt="phone icon"
+                /><span>+380666666666</span>
+              </a>
             </li>
           </ul>
-          <nav class="footer__navigation">
-            <ul class="footer__list">
-              <li><h3>Каталог</h3></li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Акції</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Тротуарна плитка</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Бордюри</a
-                >
-              </li>
-            </ul>
-            <ul class="footer__list">
-              <li><h3>Сервіси</h3></li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Дизайн-проекти</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Укладка бруківки</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Доставка</a
-                >
-              </li>
-            </ul>
-            <ul class="footer__list">
-              <li><h3>Про компанію</h3></li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Контакти</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Завод BRAER</a
-                >
-              </li>
-              <li>
-                <a
-                  class="footer__link"
-                  href="#"
-                  >Портфоліо</a
-                >
-              </li>
-            </ul>
-          </nav>
+          <ul class="footer__info">
+            <li><h3>Про нас</h3></li>
+            <li>
+              <a
+                class="footer__link"
+                href="#aboutUs"
+                >Про нас</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="#advantages"
+                >Наші переваги</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__info">
+            <li><h3>Каталог товарів</h3></li>
+            <li>
+              <a
+                class="footer__link"
+                href="#catalogy"
+                >Каталог</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__link"
+                href="#portfolio"
+                >Наші роботи</a
+              >
+            </li>
+          </ul>
         </div>
         <p class="footer__p">&copy;Права захищені</p>
       </div>
     </footer>
-
+    <script src="js/headerHideOnScrollю.js"></script>
     <script src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -34,15 +34,19 @@
         justify-content: space-between;
         box-shadow: 4px 4px 25.9px -8px #1887BFA8;
         padding: 59px 30px 30px;
-        border-radius: 34px;
         width: 350px;
         height: 388px;
         cursor: pointer;
+
+        &:hover {
+                transform: scale(1.02);
+            }
 
         h3 {
             font-size: 14px;
             font-weight: 700;
             text-align: center;
+            color: black;
         }
     }
 
