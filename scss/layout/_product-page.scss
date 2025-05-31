@@ -112,15 +112,7 @@
       }
     }
 
-    &__img-rings {
-      display: none;
-
-      @media screen and (min-width:$bp-desktop) {
-        display: block;
-      }
-    }
-
-    &__img-membranes {
+    &__img {
       display: none;
 
       @media screen and (min-width:$bp-desktop) {

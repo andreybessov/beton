@@ -25,12 +25,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (newMain) {
           mainContainer.innerHTML = newMain.innerHTML;
 
+          // Додаємо в історію тільки якщо це нова сторінка
           if (addToHistory) {
-            history.pushState({ html: newMain.innerHTML, url }, "", url);
+            history.pushState(
+              { html: newMain.innerHTML, url },
+              "",
+              url
+            );
           }
 
-          // Прокрутка до якоря після рендеру
-          setTimeout(() => scrollToHash("#" + hash), 50);
+          // Після рендеру скролимо
+          requestAnimationFrame(() => {
+            if (hash) {
+              scrollToHash("#" + hash);
+            } else {
+              window.scrollTo({ top: 0 });
+            }
+          });
         }
       })
       .catch(err => {
@@ -39,36 +50,48 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  // Клік по посиланню
+  // Слухач кліку по лінках
   document.body.addEventListener("click", e => {
     const link = e.target.closest("a[href]");
     if (!link) return;
 
     const href = link.getAttribute("href");
+    if (!href || href.startsWith("mailto:") || href.startsWith("tel:")) return;
 
-    // Пропускаємо зовнішні посилання
-    if (href.startsWith("http") && !href.includes(location.hostname)) return;
+    // Пропускаємо зовнішні лінки
+    const linkURL = new URL(href, location.origin);
+    if (linkURL.origin !== location.origin) return;
 
-    // Пропускаємо якірні переходи всередині цієї ж сторінки
+    // Якщо це лише якір — залишаємо браузеру
     if (href.startsWith("#")) return;
 
-    // Якщо це .html або .html#anchor — ловимо
+    // Якщо це .html або .html#... — ловимо
     if (href.endsWith(".html") || href.includes(".html#")) {
       e.preventDefault();
       loadPage(href);
     }
   });
 
-  // Назад/вперед
+  // Слухач натискання кнопки "Назад"/"Вперед"
   window.addEventListener("popstate", e => {
     if (e.state?.html) {
       mainContainer.innerHTML = e.state.html;
-
-      // Прокрутка до якоря з URL
       const hash = location.hash;
-      if (hash) scrollToHash(hash);
-    } else if (location.pathname.endsWith(".html")) {
+      if (hash) {
+        requestAnimationFrame(() => scrollToHash(hash));
+      } else {
+        window.scrollTo({ top: 0 });
+      }
+    } else {
+      // Повне завантаження, якщо не збережено state
       loadPage(location.pathname + location.hash, false);
     }
   });
+
+  // Стартове збереження поточної сторінки
+  history.replaceState(
+    { html: mainContainer.innerHTML, url: location.href },
+    "",
+    location.href
+  );
 });
