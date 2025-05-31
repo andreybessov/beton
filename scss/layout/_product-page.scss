@@ -112,22 +112,20 @@
       }
     }
 
-    // &__img-rings {
-    //   display: none;
+    &__img-rings {
+      display: none;
 
-    //   @media screen and (min-width:$bp-desktop) {
-    //     display: block;
-    //     max-height: 241px;
-    //   }
-    // }
+      @media screen and (min-width:$bp-desktop) {
+        display: block;
+      }
+    }
 
-    // &__img-membranes {
-    //   display: none;
+    &__img-membranes {
+      display: none;
 
-    //   @media screen and (min-width:$bp-desktop) {
-    //     display: block;
-    //     max-height: 188px;
-    //   }
-    // }
+      @media screen and (min-width:$bp-desktop) {
+        display: block;
+      }
+    }
   }
   
