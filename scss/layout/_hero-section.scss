@@ -36,6 +36,12 @@
         color: #fff;
         background-color: #1887BF;
         cursor: pointer;
-        border: none;
+        border: 1px solid #1887BF;
+        transition: background-color .3s ease, color .3s ease;
+
+        &:hover {
+            color: black;
+            background-color: #fff;
+        }
     }
 }
