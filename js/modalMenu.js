@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const openModalBtns = [
     document.getElementById("catalogLink"),
-    ...document.querySelectorAll(".aboutUs-section__button a"),
+    ...document.querySelectorAll(".aboutUs-section__button"),
   ];
 
   openModalBtns.forEach((btn) => {

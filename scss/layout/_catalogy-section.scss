@@ -51,27 +51,23 @@
     }
 
     &__button {
-        width: 100%;
         display: flex;
         justify-content: center;
         margin: 101px 0;
 
-        a {
-            color: #fff;
-            padding: 20px 60px;
-            border: 1px solid #1887BF;
-            background-color: #1887BF;
+        button {
+            padding: 20px 85px;
+            background-color: #1887bf;
+            border: 1px solid #1887bf;
+            color: white;
+            font-size: 16px;
             cursor: pointer;
-            align-items: center;
-            transition: background-color .3s ease, color .3s ease;
+            transition: all .3s ease;
 
             &:hover {
-                background-color: transparent;
-                color: black;
-            }
+            background-color: #fff;
+            color: black;
+        }
         }
     }
-
-
-
 }

@@ -21,11 +21,6 @@
 
         @media screen and (min-width:$bp-tablet) {
             padding-top: 86px;
-
-            button {
-                display: flex;
-                width: 100%;
-            }
         }
     }
 
@@ -61,10 +56,21 @@
     &__button {
         text-align: center;
         padding-bottom: 14px;
+        padding: 20px 85px;
+        background-color: #1887bf;
+        border: 1px solid #1887bf;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all .3s ease;
+        
+        &:hover {
+            background-color: #fff;
+            color: black;
+        }
 
         @media screen and (min-width:$bp-desktop) {
             text-align: start;
-            padding: 0;
         }
     }
 }
