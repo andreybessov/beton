@@ -53,9 +53,11 @@
         margin-bottom: 20px;
     }
 
-    &__button {
+    &__button{
         text-align: center;
         padding-bottom: 14px;
+
+        button {
         padding: 20px 85px;
         background-color: #1887bf;
         border: 1px solid #1887bf;
@@ -68,9 +70,9 @@
             background-color: #fff;
             color: black;
         }
-
-        @media screen and (min-width:$bp-desktop) {
+    }
+    @media screen and (min-width:$bp-desktop) {
             text-align: start;
         }
-    }
+}
 }
