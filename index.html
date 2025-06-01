@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <base href="/beton/" />
+    <!-- <base href="/beton/" /> -->
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -19,7 +19,7 @@
       name="description"
       content="Продаємо товарний бетон, залізобетонні вироби та тротуарну плитку в Києві. Доставка та якісні матеріали від ПСГ 'Ковальська'."
     />
-    <title>Beton</title>
+    <title>Бетонні вироби</title>
   </head>
   <body>
     <aside class="sidebar">
@@ -142,8 +142,8 @@
         </div>
       </section>
       <section
-        id="catalogy"
         class="catalogy-section"
+        id="catalogy"
       >
         <div class="container">
           <h2 class="catalogy-section__title">Каталог продукції</h2>
@@ -193,12 +193,7 @@
               </li>
             </ul>
             <div class="catalogy-section__button">
-              <a
-                href="stairs.html"
-                id="catalogLink"
-                data-link="true"
-                >Більше продукції</a
-              >
+              <a id="catalogLink">Консультація</a>
             </div>
           </div>
         </div>
@@ -310,7 +305,7 @@
                   и многое другое.
                 </p>
               </li>
-              <li class="advantages-section-section__card">
+              <li class="advantages-section__card">
                 <img
                   src="src/assets/advantages-card2.png"
                   alt="advantages Icon"
@@ -402,8 +397,59 @@
         <p class="footer__p">&copy;Права захищені</p>
       </div>
     </footer>
+    <div
+      class="modal"
+      id="callbackModal"
+    >
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button
+          class="modal__close"
+          id="modalClose"
+        >
+          &times;
+        </button>
+        <h2>Зворотній зв’язок</h2>
+        <form
+          class="modal__form"
+          id="feedbackForm"
+        >
+          <label>
+            Ім’я:
+            <input
+              type="text"
+              name="name"
+              required
+            />
+          </label>
+          <label>
+            Телефон:
+            <input
+              type="tel"
+              name="phone"
+              required
+            />
+          </label>
+          <label>
+            Повідомлення:
+            <textarea
+              name="message"
+              rows="4"
+            ></textarea>
+          </label>
+          <button
+            type="submit"
+            class="modal__submit"
+          >
+            Надіслати
+          </button>
+        </form>
+      </div>
+    </div>
+
     <script src="js/headerHideOnScrollю.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="js/pageLoading.js"></script>
+    <script src="js/modalMenu.js"></script>
   </body>
 </html>

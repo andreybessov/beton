@@ -1,6 +1,5 @@
 .aboutUs-section {
-    background-color: black;
-    padding:6px 0 16px;
+    background-color: #1F1F1F;
 
     &__container {
         width: 100%;
@@ -21,7 +20,7 @@
         padding-top: 48px;
 
         @media screen and (min-width:$bp-tablet) {
-            padding-top: 101px;
+            padding-top: 86px;
 
             button {
                 display: flex;
@@ -40,7 +39,7 @@
         
 
         @media screen and (min-width:$bp-desktop) {
-            margin-bottom: 80px;
+            margin-bottom: 48px;
             text-align: start;
         }
     }
@@ -60,8 +59,12 @@
     }
 
     &__button {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        text-align: center;
+        padding-bottom: 14px;
+
+        @media screen and (min-width:$bp-desktop) {
+            text-align: start;
+            padding: 0;
+        }
     }
 }

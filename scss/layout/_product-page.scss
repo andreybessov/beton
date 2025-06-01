@@ -54,7 +54,7 @@
       }
   
       th {
-        background-color: #ffe206f8;
+        background-color: #1887BF;
         font-weight: 600;
         color: #fff;
         border-top: none;
@@ -69,17 +69,18 @@
       }
   
       tr:nth-child(even) {
-        background-color: rgb(29, 29, 161);
-        color: #fff;
+        background-color: #EEEEEE;
+        color: black;
       }
 
       tr:nth-child(odd) {
-        background-color: rgb(28, 28, 134);
-        color: #fff;
+        background-color: #D8D8D8;
+        color: black;
       }
   
       tr:hover {
-        background-color: blue;
+        background-color: #1887BF;
+        color: #fff;
       }
     }
 
@@ -109,6 +110,10 @@
       @media screen and (min-width:$bp-desktop) {
         font-size: 40px;
         text-align: justify;
+
+        p {
+          margin:  0 0 14px;
+        }
       }
     }
 
