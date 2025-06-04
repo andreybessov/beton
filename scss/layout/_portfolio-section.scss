@@ -16,6 +16,7 @@
 
         @media screen and (min-width:$bp-tablet) {
             text-align: center;
+            max-width: 812px;
         }
     }
 
@@ -37,5 +38,11 @@
             max-width: 350px;
             max-height: 381px;
         }
+    }
+
+    &__text-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
     }
 }
