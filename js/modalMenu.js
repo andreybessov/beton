@@ -19,7 +19,7 @@ function initModal() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(form);
-    fetch("https://script.google.com/macros/.../exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzpgVb0HowifEgS6SifBV1p4OuUCKCZNTY9Xq3GVJjHQb88CDu28K6ElEfz76T8Pug8/exec", {
       method: "POST",
       body: formData,
     })
