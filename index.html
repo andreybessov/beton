@@ -124,14 +124,13 @@
         <div class="container">
           <div class="hero-section__container">
             <h1 class="hero-section__title">
-              Товарний бетон, ЗБВ та будматеріали у Києві
+              Товарний бетон<br />
+              та ЗБВ у Києві
             </h1>
             <p class="hero-section__text">
-              Ми продаємо та доставляємо бетонні суміші від ПСГ
-              “Ковальська”, залізобетонні конструкції (сходові марші,
-              фундаментні блоки, залізобетонні кільця, бордюри), тротуарну
-              плитку (ПСГ “Ковальська” торгова марка “Авеню”) та інші будівельні
-              матеріали.
+              Виготовляємо якісний бетон, сходові системи, колодязні кільця,
+              перетинки та інші залізобетонні елементи. Працюємо з гарантією
+              міцності, точності та дотриманням термінів
             </p>
             <a
               href="#catalogy"
@@ -238,7 +237,12 @@
                 найкраще рішення саме для вашого об’єкта.
               </p>
               <div class="aboutUs-section__button">
-                <button type="button">Купити</button>
+                <button
+                  id="aboutUsBtn"
+                  type="button"
+                >
+                  Купити
+                </button>
               </div>
             </div>
           </div>
@@ -426,10 +430,14 @@
               type="tel"
               id="phone"
               name="phone"
-              value="+380"
               maxlength="13"
+              minlength="10"
               required
             />
+            <div
+              id="phoneError"
+              class="error-message"
+            ></div>
           </label>
           <label>
             Повідомлення:
@@ -448,10 +456,9 @@
       </div>
     </div>
 
-    <script src="js/modalMenu.js"></script>
+    <script src="js/formAndLoadingPages.js"></script>
     <script src="js/headerHideOnScrollю.js"></script>
     <script src="js/mobileMenu.js"></script>
-    <script src="js/pageLoading.js"></script>
-    <script src="js/numberValid.js"></script>
+    <!-- <script src="js/pageLoading.js"></script> -->
   </body>
 </html>

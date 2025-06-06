@@ -36,12 +36,12 @@ a {
     text-decoration: none;
 }
 
- input.error {
-    border: 2px solid red;
-  }
+input.error {
+  border: 1px solid red;
+}
 
-  .error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 4px;
-  }
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}

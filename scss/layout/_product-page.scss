@@ -32,7 +32,7 @@
       text-align: center;
 
       @media screen and (min-width:$bp-desktop) {
-        font-size: 109px;
+        font-size: 105px;
         text-align: start;
       }
     }
@@ -112,7 +112,7 @@
         text-align: justify;
 
         p {
-          margin:  0 0 14px;
+          margin:  4px;
         }
       }
     }
