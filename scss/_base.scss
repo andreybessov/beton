@@ -36,11 +36,12 @@ a {
     text-decoration: none;
 }
 
-.fade {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+ input.error {
+    border: 2px solid red;
   }
-  
-  .fade-out {
-    opacity: 0;
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
   }
